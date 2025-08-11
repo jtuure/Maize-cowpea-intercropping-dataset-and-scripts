@@ -164,7 +164,7 @@ The data is also included in the MATLAB MAT-file: `manualObservations.mat`.
 - `sortingManual.m`: Prepares and arranges the manual observation data for statistical analysis, imputes missing values.
 - `soildata_preparation.m`: Fills data gaps by interpolation and processes the soil data.
 - `weather_seasonal_monthly.m`: Plots weather parameters over the measurement period, calculates seasonal statistics.
-- `weahter_longterm.m`: Compares long-term weather statistics with the study period.
+- `weather_longterm.m`: Compares long-term weather statistics with the study period.
 - `yieldProcessing.m`: Calculates yield statistics, prepares data for ANOVA and WUE calculations.
 - `wue.m`: Calculates water use efficiency (WUE) parameters and plots timeseries for precipitation, evapotranspiration (ETc), and soil water content (SWC).
 - `statisticsYields.m`: Runs ANOVA on yield data and calculates descriptive statistics.

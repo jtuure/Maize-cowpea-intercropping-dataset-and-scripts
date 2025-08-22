@@ -75,15 +75,22 @@ CroppingSystem= {'Solecrop'; 'Intercrop'; 'Solecrop';...
     'Intercrop'; 'Solecrop';'Intercrop';'Solecrop';'Intercrop';...
     'Solecrop';'Intercrop';' ';' ';' '};
 
-yieldTable = M.descriptiveStats(:, {'GrowingSeason', 'extrapolatedGrainMass',...
+yieldTableMaize = M.descriptiveStats(:, {'GrowingSeason', 'extrapolatedGrainMass',...
     'extrapolatedVegetativeMass','totalYieldFrom25m2','plantPopulation',...
     'thousandGrainWeight'});
-yieldTable = addvars(yieldTable, CroppingSystem, 'Before', 'extrapolatedGrainMass');
+yieldTableMaize = addvars(yieldTableMaize, CroppingSystem, 'Before', 'extrapolatedGrainMass');
 
-wueTable = M.descriptiveStats(:, {'GrowingSeason','WUE_kcbiomass',...
-    'WUE_kcmaizegrains','WUE_kctotalgrains','ETc'});
-wueTable = addvars(wueTable, CroppingSystem, 'Before', 'WUE_kcbiomass');
+yieldTableCowpea = C.descriptiveStats(:, {'GrowingSeason', 'extrapolatedGrainMass',...
+    'extrapolatedVegetativeMass','totalYieldFrom25m2','plantPopulation',...
+    'thousandGrainWeight'}); 
+
+
+wpTable = M.descriptiveStats(:, {'GrowingSeason','WP_kcbiomass',...
+    'WP_kcmaizegrains','WP_kctotalgrains','ETc'});
+wpTable = addvars(wpTable, CroppingSystem, 'Before', 'WP_kcbiomass');
 
 % Export the tables as spreadsheets 
-writetable(yieldTable, 'yieldTable.xlsx'); 
-writetable(wueTable, 'wueTable.xlsx'); 
+writetable(yieldTableMaize, 'yieldTableMaize.xlsx'); 
+writetable(yieldTableCowpea, 'yieldTableCowpea.xlsx'); 
+
+writetable(wpTable, 'wpTable.xlsx'); 

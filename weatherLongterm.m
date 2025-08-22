@@ -8,7 +8,7 @@ load weatherDataLongterm.mat
 
 %Calcuate the daily sum of P for later averaging
 reshapeT = TT(:,{'P'});
-TT2 = retime(reshapeT,'daily','sum'); %Calculate monthly sum for P
+TT2 = retime(reshapeT,'daily','sum'); %Calculate daily sum for P
 
 longRainMonths = 3:8; % March to August
 shortRainMonths = [1, 2, 10, 11, 12]; % Jan, Feb, Oct, Nov, Dec
@@ -127,6 +127,13 @@ for i = 1:5
     
     clear reshapeTT TTP RunningDayNumber temp rh p Time idx
 end
+
+%% Annual mean values
+annualP =retime(reshapeT , 'yearly', 'sum');
+nYears = years(reshapeT.TIME(end) - reshapeT.TIME(1));
+meanAnnualP = round(sum(annualP.P)/nYears,0); % Precipitation
+annualTT = retime(TT, 'yearly', 'mean');
+meanAnnualT = round(sum(annualTT.T)/nYears,1); % Temperature 
 
 %% Colors and fonts for plotting
 color1 = [0 0.4470 0.7410];

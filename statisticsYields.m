@@ -25,24 +25,24 @@ season_num = reshape(repmat(1:5, 3, 1), [], 1);
 season_num = [season_num ;season_num];
 %%
 for i = 1:numel(plots)
-    WUE_ETcD_maizegrains(i,1) = WUE_ETcD_maizegrain(season_num(i)).(plots{i});
-    WUE_ETcD_biomasses(i,1) = WUE_ETcD_totalbiomass(season_num(i)).(plots{i});
-    WUE_ETcD_totalgrains(i,1) = WUE_ETcD_totalgrain(season_num(i)).(plots{i});
+    WP_ETcD_maizegrains(i,1) = WP_ETcD_maizegrain(season_num(i)).(plots{i});
+    WP_ETcD_biomasses(i,1) = WP_ETcD_totalbiomass(season_num(i)).(plots{i});
+    WP_ETcD_totalgrains(i,1) = WP_ETcD_totalgrain(season_num(i)).(plots{i});
     
-    WUE_Kc_maizegrains(i,1) = WUEKc_maizegrain(season_num(i)).(plots{i});
-    WUE_Kc_biomass(i,1) = WUEKc_totalbiomass(season_num(i)).(plots{i});
-    WUE_Kc_totalgrains(i,1) = WUEKc_totalgrain(season_num(i)).(plots{i});
+    WP_Kc_maizegrains(i,1) = WPKc_maizegrain(season_num(i)).(plots{i});
+    WP_Kc_biomass(i,1) = WPKc_totalbiomass(season_num(i)).(plots{i});
+    WP_Kc_totalgrains(i,1) = WPKc_totalgrain(season_num(i)).(plots{i});
     
     WU_Kc(i,1) = WUKc(season_num(i)).(plots{i});
 end
 
-T.WUE_etcbiomass = WUE_ETcD_biomasses;
-T.WUE_etcmaizegrain = WUE_ETcD_maizegrains;
-T.WUE_etctotalgrain = WUE_ETcD_totalgrains;
+T.WP_etcbiomass = WP_ETcD_biomasses;
+T.WP_etcmaizegrain = WP_ETcD_maizegrains;
+T.WP_etctotalgrain = WP_ETcD_totalgrains;
 
-T.WUE_kcbiomass = WUE_Kc_biomass;
-T.WUE_kcmaizegrains =WUE_Kc_maizegrains;
-T.WUE_kctotalgrains = WUE_Kc_totalgrains;
+T.WP_kcbiomass = WP_Kc_biomass;
+T.WP_kcmaizegrains =WP_Kc_maizegrains;
+T.WP_kctotalgrains = WP_Kc_totalgrains;
 T.ETc = WU_Kc;
 
 %%
@@ -54,12 +54,12 @@ numberOfCropTreatments = 2; %Number of crop treatments
 % Maize repsonse variables
 vars = {'extrapolatedGrainMass' 'extrapolatedVegetativeMass' 'totalYieldFrom25m2' 'totalBiomasses'...
     'plantPopulation' 'thousandGrainWeight' 'plotTotalGrainYield'...
-    'HI' 'WUE_etcbiomass' 'WUE_etcmaizegrain' 'WUE_etctotalgrain'...
-    'WUE_kcbiomass' 'WUE_kcmaizegrains' 'WUE_kctotalgrains','ETc'};
+    'HI' 'WP_etcbiomass' 'WP_etcmaizegrain' 'WP_etctotalgrain'...
+    'WP_kcbiomass' 'WP_kcmaizegrains' 'WP_kctotalgrains','ETc'};
 
 %Cowpea response variables
 varsC = {'extrapolatedGrainMass' 'extrapolatedVegetativeMass' 'totalYieldFrom25m2'...
-    'plantPopulation' 'thousandGrainlWeight' 'HI' };
+    'plantPopulation' 'thousandGrainWeight' 'HI' };
 
 % Make a table of numeric data of the response variables
 T2 = T{:,vars};

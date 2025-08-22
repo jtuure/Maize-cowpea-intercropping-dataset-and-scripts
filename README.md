@@ -6,7 +6,7 @@ Paper Title: Maize yields and water use efficiency as affected by cowpea
               intercropping over five consecutive growing seasons in a semi-arid 
               environment in Kenya
 
-Authors: Juuso Tuure1, Kevin Z. Mganga, Pirjo S. A. Mäkelä, Matti Räsänen,
+Authors: Juuso Tuure, Kevin Z. Mganga, Pirjo S. A. Mäkelä, Matti Räsänen,
  Petri Pellikka, Sheila Wachiye, Laura Alakukku
 
 Corresponding Author: Juuso Tuure  
@@ -166,7 +166,7 @@ The data is also included in the MATLAB MAT-file: `manualObservations.mat`.
 - `weather_seasonal_monthly.m`: Plots weather parameters over the measurement period, calculates seasonal statistics.
 - `weather_longterm.m`: Compares long-term weather statistics with the study period.
 - `yieldProcessing.m`: Calculates yield statistics, prepares data for ANOVA and WUE calculations.
-- `wue.m`: Calculates water use efficiency (WUE) parameters and plots timeseries for precipitation, evapotranspiration (ETc), and soil water content (SWC).
+- `wp.m`: Calculates water productivity (WP) parameters and plots timeseries for precipitation, evapotranspiration (ETc), and soil water content (SWC).
 - `statisticsYields.m`: Runs ANOVA on yield data and calculates descriptive statistics.
 - `yieldFigures_and_tables.m`: Generates yield bar graphs and yield statistics tables.
 - `statistics_SPAD.m`: Calculates descriptive statistics for SPAD values, performs ANOVA, and plots results.
@@ -178,7 +178,7 @@ The data is also included in the MATLAB MAT-file: `manualObservations.mat`.
 3. `weatherSeasonalMonthly.m`  
 4. `weahterLongterm.m`  
 5. `yieldProcessing.m`  
-6. `wue.m`  
+6. `wp.m`  
 7. `statisticsYields.m`  
 8. `yieldFiguresTables.m.m`  
 9. `statisticsSPAD.m`  

@@ -6,7 +6,9 @@ Paper Title: Maize yields and water productivity as affected by cowpea
 intercropping over five consecutive growing seasons in a semi-arid
 environment in Kenya 
 
-DOI: https://doi.org/10.1016/j.agwat.2025.109779
+Paper DOI: https://doi.org/10.1016/j.agwat.2025.109779
+
+Dataset DOI: https://doi.org/10.5281/zenodo.16930024
 
 Journal: Agricultural Water Management
 

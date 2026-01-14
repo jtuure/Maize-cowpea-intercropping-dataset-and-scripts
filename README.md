@@ -213,7 +213,10 @@ The following functions are used in the scripts for specific calculations and pl
 ********************************************************************************
 4. Data Usage & Citation:
 ********************************************************************************
-If you use this dataset or scripts, please cite it.
+If you use this dataset or scripts, please cite it. 
+Citation for the dataset: https://doi.org/10.5281/zenodo.16930024
+Citation for the paper: https://doi.org/10.1016/j.agwat.2025.109779
+
 ********************************************************************************
 5. Contact Information:
 ********************************************************************************

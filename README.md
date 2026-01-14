@@ -6,7 +6,7 @@ Paper Title: Maize yields and water use efficiency as affected by cowpea
               intercropping over five consecutive growing seasons in a semi-arid 
               environment in Kenya (https://doi.org/10.1016/j.agwat.2025.109779)
 
-Journal: Agriculture and Water Management
+Journal: Agricultural Water Management
 
 Authors: Juuso Tuure, Kevin Z. Mganga, Pirjo S. A. Mäkelä, Matti Räsänen,
  Petri Pellikka, Sheila Wachiye, Laura Alakukku
